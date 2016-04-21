@@ -1,0 +1,32 @@
+<center><h2>Zaloguj się do aplikacji</h2></center>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <center>
+  <div class="field">
+    <label>Adres e-mail</label>
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+  </center>
+  <center>
+  <div class="field">
+    <label>Hasło dostępu</label>
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+  </center>
+  <% if devise_mapping.rememberable? -%>
+    <center>
+    <div class="field">
+	  <label>Zapamiętaj dane</label>
+      <%= f.check_box :remember_me %>
+    </div>
+	</center>
+  <% end -%>
+  <center>
+  <div class="actions">
+    <%= f.submit "Zaloguj" %>
+  </div>
+  </center>
+<% end %>
+<center>
+<%= render "devise/shared/links" %>
+</center>

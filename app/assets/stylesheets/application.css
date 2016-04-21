@@ -1,0 +1,25 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  color: black;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedbe9+0,26558b+0,aac5de+18,6199c7+33,6199c7+37,6199c7+37,3a84c3+45,419ad6+56,4bb8f0+71,3a8bc2+84,26558b+93 */
+	background: #cedbe9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cedbe9 0%, #26558b 0%, #aac5de 18%, #6199c7 33%, #6199c7 37%, #6199c7 37%, #3a84c3 45%, #419ad6 56%, #4bb8f0 71%, #3a8bc2 84%, #26558b 93%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #cedbe9 0%,#26558b 0%,#aac5de 18%,#6199c7 33%,#6199c7 37%,#6199c7 37%,#3a84c3 45%,#419ad6 56%,#4bb8f0 71%,#3a8bc2 84%,#26558b 93%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #cedbe9 0%,#26558b 0%,#aac5de 18%,#6199c7 33%,#6199c7 37%,#6199c7 37%,#3a84c3 45%,#419ad6 56%,#4bb8f0 71%,#3a8bc2 84%,#26558b 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+
+}

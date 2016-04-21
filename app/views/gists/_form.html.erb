@@ -1,0 +1,27 @@
+<%= form_for @gist, html: { class: 'form-horizontal' } do |f| %>
+  <label>Imię klienta</label>
+  <div class="form-group">
+    <div class="col-md-10">
+      <%= f.text_field :src, class: 'text_field form-control' %>
+    </div>
+  </div>
+  <label>Nazwisko klienta</label>
+  <div class="form-group">
+    <div class="col-md-10">
+      <%= f.text_field :lang, class: 'text_field form-control' %>
+    </div>
+  </div>
+  <label>Rodzaj biletu</label>
+  <div class="form-group">
+    <div class="col-md-10">
+      <%= f.text_field :desc, class: 'text_field form-control' %>
+    </div>
+  </div>
+
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit "Zatwierdź", class: 'btn btn-primary' %>
+      <%= link_to t('.cancel', default: t("Anuluj")),
+                  gists_path, class: 'btn btn-default' %>
+    </div>
+
+<% end %>
